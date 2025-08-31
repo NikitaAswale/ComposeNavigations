@@ -9,7 +9,7 @@ import com.example.composenavigations.screens.ProfileScreen
 import com.example.composenavigations.screens.SettingsScreen
 
 /**
- * Navigation - Think of this as your house's floor plan or map
+ * Navigation - Think of this as your house's floor plan or map.
  *
  * Just like how a house has a floor plan that shows how all rooms connect,
  * this Navigation component shows how all your app screens connect to each other.
