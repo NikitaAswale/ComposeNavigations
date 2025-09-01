@@ -88,7 +88,11 @@ fun SettingsScreen(navController: NavController) {
                 // This is like walking back through the door you came from
                 navController.popBackStack()
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.outlinedButtonColors(
+                containerColor = androidx.compose.ui.graphics.Color(0xFFF59E0B), // Vibrant Orange
+                contentColor = androidx.compose.ui.graphics.Color(0xFFF59E0B) // Orange text
+            )
         ) {
             Text("⬅️ Go Back")
         }

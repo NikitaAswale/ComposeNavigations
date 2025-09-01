@@ -59,7 +59,11 @@ fun ProfileScreen(navController: NavController) {
             onClick = {
                 navController.navigate("settings")
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = androidx.compose.ui.graphics.Color(0xFF10B981), // Vibrant Green
+                contentColor = androidx.compose.ui.graphics.Color.White
+            )
         ) {
             Text("Go to Settings ⚙️")
         }
@@ -72,7 +76,11 @@ fun ProfileScreen(navController: NavController) {
                 // This is like walking back through the door you came from
                 navController.popBackStack()
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.outlinedButtonColors(
+                containerColor = androidx.compose.ui.graphics.Color(0xFFF59E0B), // Vibrant Orange
+                contentColor = androidx.compose.ui.graphics.Color(0xFFF59E0B) // Orange text
+            )
         ) {
             Text("⬅️ Go Back")
         }
