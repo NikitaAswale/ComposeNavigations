@@ -46,7 +46,11 @@ fun HomeScreen(navController: NavController) {
                 // This is like opening a door and walking to another room
                 navController.navigate("profile")
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = androidx.compose.ui.graphics.Color(0xFF8B5CF6), // Vibrant Purple
+                contentColor = androidx.compose.ui.graphics.Color.White
+            )
         ) {
             Text("Go to Profile 👤")
         }
@@ -58,7 +62,11 @@ fun HomeScreen(navController: NavController) {
             onClick = {
                 navController.navigate("settings")
             },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = androidx.compose.ui.graphics.Color(0xFF10B981), // Vibrant Green
+                contentColor = androidx.compose.ui.graphics.Color.White
+            )
         ) {
             Text("Go to Settings ⚙️")
         }
